@@ -12,6 +12,10 @@
         packages = with pkgs; [
           bun
         ];
+
+        shellHook = ''
+          export PS1="\n[nix-shell:\w]$ "
+        '';
       };
     };
 }
